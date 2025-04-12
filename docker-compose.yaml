@@ -1,0 +1,36 @@
+version: "3.8"
+
+services:
+
+  opencats:
+    build: .
+    ports:
+      - 8090:80
+    links:
+      - mysql
+
+  mysql:
+      image: mysql:5.5
+      ports:
+        - 3307:3306
+      volumes:
+        - opencats_data:/var/lib/mysql
+      environment:
+        MYSQL_ROOT_PASSWORD: root
+        MYSQL_DATABASE: cats_dev
+        MYSQL_USER: cats
+        MYSQL_PASSWORD: password
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - 8080:80
+    links:
+      - mysql:db
+    environment:
+      PMA_HOST: db
+      PMA_USER: cats
+      PMA_PASSWORD: password
+
+volumes:
+  opencats_data: {}
