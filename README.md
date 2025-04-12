@@ -33,4 +33,4 @@ docker-compose -f docker-compose-dev.yaml up --build -d
 ### Build & Publish The Image On GitHub Repository
 
 - Push to `master` branch to create `ghcr.io/taljacob2/opencats-docker:master`
-- Push a git tag with a semantic tagging of `*.*.*` to create `ghcr.io/taljacob2/opencats-docker:*.*.*`
+- Push a git tag with a semantic tagging of `*.*.*` to create `ghcr.io/taljacob2/opencats-docker:*.*.*` and update `ghcr.io/taljacob2/opencats-docker:latest`
