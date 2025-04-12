@@ -3,7 +3,7 @@ version: "3.8"
 services:
 
   opencats:
-    image: ghcr.io/taljacob2/opencats-docker:latest
+    image: ghcr.io/taljacob2/opencats-docker:master
     ports:
       - 8090:80
     links:
