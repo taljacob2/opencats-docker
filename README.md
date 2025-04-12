@@ -11,6 +11,7 @@ docker-compose up -d
 ```
 
 - OpenCATS will serve at: http://localhost:8090
+  - Follow through the [Installation Wizard](https://documentation.opencats.org/installation/run-the-installer), just press "test" and "next" all the way. Finally the Username and Passoword will be `admin` and `admin`.
 - MySQL will serve at http://localhost:3307
 - phpMyAdmin will serve at http://localhost:8080
 
@@ -25,6 +26,7 @@ docker-compose -f docker-compose-dev.yaml up --build -d
 ```
 
 - OpenCATS will serve at: http://localhost:8090
+  - Follow through the [Installation Wizard](https://documentation.opencats.org/installation/run-the-installer), just press "test" and "next" all the way. Finally the Username and Passoword will be `admin` and `admin`.
 - MySQL will serve at http://localhost:3307
 - phpMyAdmin will serve at http://localhost:8080
 
